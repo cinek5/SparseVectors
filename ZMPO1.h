@@ -15,3 +15,4 @@ void v_MakeVector(int *vector_length, int *default_value, int length, int value,
 void v_DefineVectorDefaultValue(int *num_of_nondefault_values, int *default_value, int new_value);
 void v_VectorDispose(int **pi_values, int **pi_offsets, bool *vector_exist);
 bool b_HasVectorOnlyDefaultValues(int *num_of_nondefault_values);
+void v_SetVectorLength(int *num_of_nondefault_values, int *default_value, int* vector_length, int newLength, int *pi_offsets);
