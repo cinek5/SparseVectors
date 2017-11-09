@@ -6,8 +6,9 @@
 #include <vector>
 using namespace std;
 
-string  s_handleSingleInput(); //returns array 
+void  v_handleSingleInput(int *arrays_size_allocated, int *vector_length, bool *vector_exist,
+	int *default_value, int *num_nondefault_values, int **pi_values, int **pi_offsets);
 vector<string> s_sliceCommand(string str);
 bool b_checkArguments(int numberOfArguments, vector<string>& slicedCommands);
 bool b_checkCommand(vector<string>& slicedCommands);
-bool is_number(std::string& s);
+bool is_number(string& s);
