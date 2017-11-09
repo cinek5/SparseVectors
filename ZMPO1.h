@@ -20,3 +20,4 @@ void v_DefineVectorDefaultValue(int *num_of_nondefault_values, int *default_valu
 void v_VectorDispose(int **pi_values, int **pi_offsets, bool *vector_exist);
 bool b_HasVectorOnlyDefaultValues(int *num_of_nondefault_values);
 void v_SetVectorLength(int *num_of_nondefault_values, int *default_value, int* vector_length, int newLength, int *pi_offsets, bool *vector_exists);
+int num_Get(int *num_nondefault_values, int *default_value, int *vector_length, int *pi_offsets, int *pi_values, int offset, bool *vector_exists);

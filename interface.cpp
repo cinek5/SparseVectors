@@ -41,7 +41,8 @@ void  v_handleSingleInput(int *arrays_size_allocated,int *vector_length, bool *v
 			   stoi(slicedCommands[1]),vector_length,vector_exist);
 		   break;
 	   case 2:
-		   
+		   //get
+		   cout << num_Get(num_nondefault_values, default_value, vector_length, *pi_offsets, *pi_values, stoi(slicedCommands[1]), vector_exist)<<endl;
 		   break;
 	   case 3:
 		   //len 
