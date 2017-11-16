@@ -6,6 +6,8 @@
 #define DEFAULT_ARRAY_ALLOCATED 4
 #define DEFAULT_VALUE_INIT 1
 using namespace std;
+void v_EnlargeArrays(int **pi_values, int **pi_offsets, int *num_nondefault_values, int *arrays_size_allocated);
+void v_ShortenArrays(int **pi_values, int **pi_offsets, int *num_nondefault_values, int *arrays_size_allocated);
 void v_ReallocateArrays(int **pi_values, int **pi_offsets, int *num_nondefault_values, int *arrays_size_allocated);
 void v_VectorDispose(int **pi_values, int **pi_offsets, bool *vector_exist);
 string  s_ReturnStringRepresentation(int *pi_values, int *pi_offsets, int *num_nondefault_values, int *default_value, int *vector_length,
@@ -19,5 +21,6 @@ void v_MakeVector(int *vector_length, int *default_value, int length, int value,
 void v_DefineVectorDefaultValue(int *num_of_nondefault_values, int *default_value, int new_value);
 void v_VectorDispose(int **pi_values, int **pi_offsets, bool *vector_exist);
 bool b_HasVectorOnlyDefaultValues(int *num_of_nondefault_values);
-void v_SetVectorLength(int *num_of_nondefault_values, int *default_value, int* vector_length, int newLength, int *pi_offsets, bool *vector_exists);
+void v_SetVectorLength(int *num_of_nondefault_values, int *default_value, int* vector_length, int newLength, int **pi_offsets,
+	int **pi_values, bool *vector_exists, int *arrays_size_allocated);
 int num_Get(int *num_nondefault_values, int *default_value, int *vector_length, int *pi_offsets, int *pi_values, int offset, bool *vector_exists);

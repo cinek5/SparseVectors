@@ -46,7 +46,7 @@ void  v_handleSingleInput(int *arrays_size_allocated,int *vector_length, bool *v
 		   break;
 	   case 3:
 		   //len 
-		   v_SetVectorLength(num_nondefault_values, default_value, vector_length, stoi(slicedCommands[1]), *pi_offsets,vector_exist);
+		   v_SetVectorLength(num_nondefault_values, default_value, vector_length, stoi(slicedCommands[1]), pi_offsets,pi_values,vector_exist,arrays_size_allocated);
 		   break;
 	   case 4:
 		   //print
